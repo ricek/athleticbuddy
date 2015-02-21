@@ -29,7 +29,7 @@ def calendar():
     current_week = []
     aim = [current_week]
     week_counter = -1
-    for d in xrange(1,29):
+    for d in range(1,29):
         week_counter += 1
         if week_counter >= 7:
             week_counter = 0
