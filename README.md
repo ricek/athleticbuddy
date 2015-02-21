@@ -1,4 +1,4 @@
-# SportCalendar
+# AthleticBuddy
 This is a HackED project by Liang Gao, Ibnat Iqbal, Jayson Isaac & Ben Sussman
 
 ## Problem
@@ -7,4 +7,4 @@ This is a HackED project by Liang Gao, Ibnat Iqbal, Jayson Isaac & Ben Sussman
 * Student participation is inconsistent in gym class
 
 ## Solution
-SportCalendar! A webapp designed to help students discover, schedule, and participate in athletic activities in school!
+AthleticBuddy! A webapp designed to help students discover, schedule, and participate in athletic activities in school!
