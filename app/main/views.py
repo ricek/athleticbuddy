@@ -1,12 +1,11 @@
-from flask import Flask, render_template
+from flask import render_template
 from time import localtime
-
-app = Flask(__name__)
-app.debug = True
+from . import app
 
 @app.route("/")
 def hello():
     return "Hello World!"
+
 
 @app.route("/calendar")
 def calendar():
@@ -43,7 +42,3 @@ def calendar():
     ]
 
     return render_template('calendar.html', activities_in_month=aim)
-
-
-if __name__ == "__main__":
-    app.run()
