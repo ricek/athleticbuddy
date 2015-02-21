@@ -4,7 +4,7 @@ from . import app
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return render_template('index.html')
 
 
 @app.route("/calendar")
