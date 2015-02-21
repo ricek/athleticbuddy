@@ -1,6 +1,8 @@
 from flask import Flask, render_template
-import time
+from time import localtime
+
 app = Flask(__name__)
+app.debug = True
 
 @app.route("/")
 def hello():
@@ -9,26 +11,26 @@ def hello():
 @app.route("/calendar")
 def calendar():
     empty = {
-        day_of_week: "monurday",
-        day_of_month: "32",
-        month:"marchuary",
-        activities: []
+        'day_of_week': "monurday",
+        'day_of_month': "32",
+        'month':"marchuary",
+        'activities': []
     }
 
     fancyday = {
-        day_of_week: "wednesday",
-        day_of_month: "15",
-        month: "February",
-        activities: [
+        'day_of_week': "wednesday",
+        'day_of_month': "15",
+        'month': "February",
+        'activities': [
                         {
-                            time:localtime(),
-                            category: "basketball",
-                            title: "intramural bball",
+                            'time':localtime(),
+                            'category': "basketball",
+                            'title': "intramural bball",
                         },
                         {
-                            time:localtime(),
-                            category: "football",
-                            title: "varsity football"
+                            'time':localtime(),
+                            'category': "football",
+                            'title': "varsity football"
                         }
                     ]
     }

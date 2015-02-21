@@ -3,15 +3,19 @@
        <table border="1" cellspacing="1">
 		<thead>February</thead>
 		<tbody>
-			{% for activities_by_week in activities_in_month: %}
+			{% for activities_by_week in activities_in_month %}
 				<tr>
-					{% for activities_by_day in activities_by_week %}
+					{% for day in activities_by_week %}
 						<td>
+						    {{ day.day_of_week }}
+						    {{ day.month }}
+						    {{ day.day_of_month }}<br/>
+						    ACTIVITES:
 							<ul>
-								{% for activity in activities_by_day %}
+								{% for activity in day.activities %}
 									<li>
-										TITLE: {% activity.title %};
-										CATEGORY: {% activity.category %};
+										TITLE: {{ activity.title }};
+										CATEGORY: {{ activity.category }};
 									</li>
 								{% endfor %}
 							</ul>
