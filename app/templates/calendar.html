@@ -1,7 +1,8 @@
 <html>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
     <body>
-       <table border="1" cellspacing="1">
+    <table border="1" cellspacing="1" class="table table-bordered table-striped">
 		<thead>February</thead>
 		<tbody>
 			{% for activities_by_week in activities_in_month %}
